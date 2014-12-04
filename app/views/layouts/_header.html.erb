@@ -1,0 +1,65 @@
+<header>
+        	<!--header_top starts-->
+            <div class="header_top">
+            	<!--container starts-->
+                <div class="container">
+                    <div class="logo">
+                        <a href=""><h1>Juna amagara Ministries</h1></a>
+                    </div> 
+                    <div class="alignright">
+                    	<%= link_to "Donate Now", amagara_donation_path%>
+                    </div>
+                </div>
+                <!--container ends-->     
+            </div>
+            <!--header_top ends-->
+            <!--menu-container starts-->
+            <div class="container">
+                <!--menu starts-->
+                <nav class="menu container" id="main-menu" style="background-color:#884500;">
+                    <ul>
+                        <li class="current_page_item">
+                            <%= link_to "Home", root_path %>
+                        </li>
+                        <li class="hasSubmenu">
+                            <a href="">About</a>
+                            <ul>
+                                <li><%= link_to "Who we are", amagara_about_path %></li>
+                                <li><%= link_to "About Uganda", amagara_uganda_path %></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <%= link_to "Ministries", amagara_ministry_path %>
+                        </li>
+                        <li>
+                           <%= link_to "Sponsorship", amagara_sponsorship_path %>
+                        </li>
+                        
+                        </li>
+                        <li class="hasSubmenu">
+                            <a href="">News/Faqs</a>
+                            <ul>
+                                <li><%= link_to "Faqs", amagara_faqs_path %></li>
+                                <li><%= link_to "News", amagara_news_path %></li>
+                            
+                            </ul>
+                        </li>
+                        <li class="hasSubmenu">
+                            <a href="">Activities</a>
+                            <ul>
+                                 <li>
+                                   <%= link_to "Construction", amagara_construction_path %>
+                                </li>    
+                                <li>
+                                   <%= link_to "Mission Trips", amagara_missions_path %>
+                                </li>
+                            
+                            </ul>
+                        </li>
+                       
+                    </ul>
+                </nav>
+                <!--menu ends-->
+            </div>
+            <!--menu-container ends-->
+        </header>
