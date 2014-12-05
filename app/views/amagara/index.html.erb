@@ -1,0 +1,6 @@
+<% @homes.each do|h|%>
+<%= h.title %>
+<%= h.description %>
+<%= image_tag h.avatar.url(:large) %>
+
+<% end %>

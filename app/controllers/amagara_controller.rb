@@ -1,5 +1,6 @@
 class AmagaraController < ApplicationController
   def index
+  	@homes = Home.all
   end
 
   def about 
