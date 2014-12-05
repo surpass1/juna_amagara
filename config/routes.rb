@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/junaamagara', as: 'rails_admin'
+  devise_for :users
   root :to=> 'amagara#index'
 
   get 'amagara/about'

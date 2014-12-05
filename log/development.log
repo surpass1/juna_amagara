@@ -11762,3 +11762,2754 @@ ActionController::RoutingError (No route matches [GET] "/fonts/archivonarrow-bol
   Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
   Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
   Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-05 11:21:55 +0300
+Processing by AmagaraController#index as HTML
+  Rendered amagara/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 650ms (Views: 649.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-05 11:21:56 +0300
+Processing by AmagaraController#index as HTML
+  Rendered amagara/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 612ms (Views: 611.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (122.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (133.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseCreateUsers (20141205083005)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.5ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141205083005"]]
+  [1m[36m (165.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-05 11:33:01 +0300
+
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x92316cc>):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-05 11:34:23 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (188.7ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 1653ms (Views: 1610.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/amagara.css?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/animation.css?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/shortcodes.css?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/layerslider.css?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/skin.css?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/amagara.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/common.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/geocoder.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/greensock.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/jquery-easing-1.3.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/jquery-transit-modified.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.0-packed.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/jquery.gmap.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/jquery.inview.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/jquery.meanmenu.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:25 +0300
+
+
+Started GET "/assets/jquery.nicescroll.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/jquery.tabs.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/layerslider.kreaturamedia.jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/layerslider.transitions.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/marker.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/onion.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/shortcodes.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/util.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/validation.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+
+Started GET "/assets/images/body_bg.jpg" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/body_bg.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.8ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.1ms)
+
+
+Started GET "/assets/images/header_bg.jpg" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/header_bg.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.4ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.4ms)
+
+
+Started GET "/assets/images/header_top.png" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/header_top.png"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.7ms)
+
+
+Started GET "/assets/fonts/archivonarrow-bold-webfont.woff" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+ActionController::RoutingError (No route matches [GET] "/fonts/archivonarrow-bold-webfont.woff"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.9ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.4ms)
+
+
+Started GET "/assets/images/button_bg_pattern.png" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/button_bg_pattern.png"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.2ms)
+
+
+Started GET "/assets/fonts/archivonarrow-bold-webfont.ttf" for 127.0.0.1 at 2014-12-05 11:34:26 +0300
+
+ActionController::RoutingError (No route matches [GET] "/fonts/archivonarrow-bold-webfont.ttf"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-05 11:35:06 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"apMtdoFX5K4UKlFViwzgsiRrVuKr8IPgdBvM0zyJLoo=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"apMtdoFX5K4UKlFViwzgsiRrVuKr8IPgdBvM0zyJLoo=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 987ms (Views: 985.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/amagara.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:07 +0300
+
+
+Started GET "/assets/animation.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:07 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:07 +0300
+
+
+Started GET "/assets/layerslider.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:07 +0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:07 +0300
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:07 +0300
+
+
+Started GET "/assets/shortcodes.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:07 +0300
+
+
+Started GET "/assets/skin.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:07 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/amagara.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/common.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/geocoder.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery-easing-1.3.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/greensock.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.0-packed.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery-transit-modified.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery.gmap.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery.inview.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery.meanmenu.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery.nicescroll.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery.tabs.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/layerslider.transitions.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/layerslider.kreaturamedia.jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/onion.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/marker.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/shortcodes.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/util.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/validation.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:08 +0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-05 11:35:22 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 997ms (Views: 994.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/amagara.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/animation.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/shortcodes.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/layerslider.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/skin.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/amagara.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/common.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/geocoder.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/greensock.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery-easing-1.3.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery.inview.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.0-packed.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery-transit-modified.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery.gmap.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery.meanmenu.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery.nicescroll.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery.tabs.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/layerslider.kreaturamedia.jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/layerslider.transitions.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/marker.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/onion.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/shortcodes.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/validation.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started GET "/assets/util.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:23 +0300
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-05 11:35:39 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"apMtdoFX5K4UKlFViwzgsiRrVuKr8IPgdBvM0zyJLoo=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 1024ms (Views: 1002.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/amagara.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/animation.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/layerslider.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/shortcodes.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/skin.css?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:40 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/amagara.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/common.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/jquery-easing-1.3.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/greensock.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/geocoder.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/jquery-transit-modified.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/jquery.nicescroll.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.0-packed.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/jquery.inview.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/jquery.meanmenu.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/jquery.gmap.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/jquery.tabs.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/layerslider.transitions.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/layerslider.kreaturamedia.jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/marker.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/onion.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/shortcodes.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/util.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/validation.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-05 11:35:41 +0300
+
+
+Started GET "/assets/amagara.css?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/animation.css?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/layerslider.css?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/skin.css?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/shortcodes.css?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/amagara.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/geocoder.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/common.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/greensock.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery-easing-1.3.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery-transit-modified.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.0-packed.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery.inview.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery.gmap.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery.nicescroll.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery.meanmenu.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery.tabs.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/layerslider.kreaturamedia.jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/layerslider.transitions.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/marker.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/onion.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/shortcodes.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/util.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/assets/validation.js?body=1" for 127.0.0.1 at 2014-12-05 11:36:06 +0300
+
+
+Started GET "/junaamagara" for 127.0.0.1 at 2014-12-05 11:39:28 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1[0m
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (17.8ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.1ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_navigation.html.haml (11.6ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/pjax.html.haml (7.2ms)
+Completed 200 OK in 7420ms (Views: 7183.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:36 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:39:37 +0300
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2014-12-05 11:39:37 +0300
+
+
+Started GET "/junaamagara" for 127.0.0.1 at 2014-12-05 11:40:42 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1[0m
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (19.0ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (1.5ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_navigation.html.haml (5.8ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/pjax.html.haml (2.9ms)
+Completed 200 OK in 725ms (Views: 713.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-12-05 11:40:42 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:42 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2014-12-05 11:40:43 +0300
+
+
+Started GET "/junaamagara" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1[0m
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (6.5ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (1.4ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_navigation.html.haml (4.8ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/pjax.html.haml (3.1ms)
+Completed 200 OK in 568ms (Views: 563.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:49 +0300
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2014-12-05 11:40:50 +0300
+
+
+Started GET "/junaamagara" for 127.0.0.1 at 2014-12-05 11:41:16 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 24ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-05 11:41:16 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.8ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 1425ms (Views: 1404.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/animation.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/layerslider.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/amagara.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/shortcodes.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/skin.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:17 +0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/amagara.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/common.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/geocoder.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/greensock.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/jquery-easing-1.3.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/jquery-transit-modified.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.0-packed.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/jquery.gmap.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/jquery.inview.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/jquery.meanmenu.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/jquery.nicescroll.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/jquery.tabs.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/layerslider.kreaturamedia.jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/layerslider.transitions.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/marker.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/onion.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/shortcodes.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/util.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/validation.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+
+Started GET "/assets/images/body_bg.jpg" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/body_bg.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.9ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.0ms)
+
+
+Started GET "/assets/images/header_bg.jpg" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/header_bg.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.1ms)
+
+
+Started GET "/assets/images/header_top.png" for 127.0.0.1 at 2014-12-05 11:41:18 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/header_top.png"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.9ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.9ms)
+
+
+Started GET "/assets/fonts/archivonarrow-bold-webfont.woff" for 127.0.0.1 at 2014-12-05 11:41:19 +0300
+
+ActionController::RoutingError (No route matches [GET] "/fonts/archivonarrow-bold-webfont.woff"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.0ms)
+
+
+Started GET "/assets/images/button_bg_pattern.png" for 127.0.0.1 at 2014-12-05 11:41:19 +0300
+
+ActionController::RoutingError (No route matches [GET] "/images/button_bg_pattern.png"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.2ms)
+
+
+Started GET "/assets/fonts/archivonarrow-bold-webfont.ttf" for 127.0.0.1 at 2014-12-05 11:41:19 +0300
+
+ActionController::RoutingError (No route matches [GET] "/fonts/archivonarrow-bold-webfont.ttf"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.9ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.7ms)
+
+
+Started GET "/junaamagara" for 127.0.0.1 at 2014-12-05 11:41:42 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-05 11:41:42 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 968ms (Views: 965.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/amagara.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/animation.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/layerslider.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/shortcodes.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/skin.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:43 +0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/amagara.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/common.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/geocoder.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/greensock.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/jquery-transit-modified.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.0-packed.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/jquery-easing-1.3.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/jquery.meanmenu.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/jquery.gmap.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/jquery.tabs.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/jquery.nicescroll.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/jquery.inview.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/layerslider.kreaturamedia.jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/marker.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/layerslider.transitions.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/onion.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/shortcodes.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/util.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/validation.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-05 11:41:44 +0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-05 11:43:09 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 967ms (Views: 963.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/amagara.css?body=1" for 127.0.0.1 at 2014-12-05 11:43:10 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-05 11:43:10 +0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-12-05 11:43:10 +0300
+
+
+Started GET "/assets/shortcodes.css?body=1" for 127.0.0.1 at 2014-12-05 11:43:10 +0300
+
+
+Started GET "/assets/animation.css?body=1" for 127.0.0.1 at 2014-12-05 11:43:10 +0300
+
+
+Started GET "/assets/layerslider.css?body=1" for 127.0.0.1 at 2014-12-05 11:43:10 +0300
+
+
+Started GET "/assets/skin.css?body=1" for 127.0.0.1 at 2014-12-05 11:43:10 +0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-05 11:43:10 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/amagara.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/common.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/geocoder.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/greensock.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.0-packed.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery-transit-modified.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery-easing-1.3.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery.inview.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery.gmap.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery.nicescroll.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery.meanmenu.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery.tabs.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/layerslider.kreaturamedia.jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/marker.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/layerslider.transitions.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/util.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/onion.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/validation.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/shortcodes.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-05 11:43:11 +0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-05 11:43:41 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 938ms (Views: 936.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-05 11:44:24 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"apMtdoFX5K4UKlFViwzgsiRrVuKr8IPgdBvM0zyJLoo=", "user"=>{"email"=>"miranzibaros@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'miranzibaros@yahoo.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-05 08:44:24.962468"], ["email", "miranzibaros@yahoo.com"], ["encrypted_password", "$2a$10$kL/h1XBvKhuUR0hFOzO2Vuqp/1.fT.605mKGZOiym9hjwoY7WIz2K"], ["updated_at", "2014-12-05 08:44:24.962468"]]
+  [1m[36m (147.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-12-05 08:44:25.118978"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-12-05 08:44:25.118978"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-12-05 08:44:25.120848"]]
+  [1m[35m (139.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/junaamagara/
+Completed 302 Found in 512ms (ActiveRecord: 288.3ms)
+
+
+Started GET "/junaamagara/" for 127.0.0.1 at 2014-12-05 11:44:25 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1[0m
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (14.1ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (7.2ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_navigation.html.haml (12.7ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/pjax.html.haml (6.7ms)
+Completed 200 OK in 1065ms (Views: 855.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:26 +0300
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:27 +0300
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:27 +0300
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:27 +0300
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:27 +0300
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:27 +0300
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:27 +0300
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2014-12-05 11:44:27 +0300
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-12-05 11:44:44 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"apMtdoFX5K4UKlFViwzgsiRrVuKr8IPgdBvM0zyJLoo="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-05 11:44:44 +0300
+Processing by AmagaraController#index as HTML
+  Rendered amagara/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 1016ms (Views: 1014.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/amagara.css?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/animation.css?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/layerslider.css?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/shortcodes.css?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/skin.css?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/amagara.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/controls.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/common.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/custom.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/greensock.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/geocoder.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.0-packed.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery.gmap.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery-transit-modified.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery-easing-1.3.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery.meanmenu.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery.inview.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery.tabs.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/layerslider.kreaturamedia.jquery.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery.nicescroll.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/jquery.validate.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/layerslider.transitions.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/onion.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/marker.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/map.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/shortcodes.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/stats.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/util.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/assets/validation.js?body=1" for 127.0.0.1 at 2014-12-05 11:44:46 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-05 11:44:51 +0300
+Processing by AmagaraController#index as HTML
+  Rendered amagara/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 958ms (Views: 956.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-05 11:55:04 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.7) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.7) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/surpass/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/surpass/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHomes (20141205085404)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "homes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141205085404"]]
+  [1m[36m (151.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
