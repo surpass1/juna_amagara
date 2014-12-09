@@ -13,5 +13,7 @@ Rails.application.routes.draw do
   get 'amagara/news'
   get 'amagara/sponsorship'
   get 'amagara/uganda'
-
+  get 'amagara/education'
+  get 'amagara/discipleship'
+  get 'amagara/outreach'
 end

@@ -4,18 +4,22 @@ class AmagaraController < ApplicationController
   end
 
   def about 
+  	@about = About.all
   	
   end
 
   def ministry
+    @ministry = Ministry.all
 
   end
 
   def sponsorship
+    @sponsor = Sponsor.all
 
   end
 
   def news
+    @news = NewsFaq.all
 
   end
 
@@ -32,6 +36,7 @@ class AmagaraController < ApplicationController
   end
 
   def faqs
+    @faqs = NewsFaq.all
 
   end
 
@@ -41,6 +46,18 @@ class AmagaraController < ApplicationController
 
   def contact
 
+  end
+
+  def education
+     @ministry = Ministry.all
+  end
+
+  def outreach
+     @ministry = Ministry.all
+  end
+
+  def discipleship
+     @ministry = Ministry.all
   end
 
 

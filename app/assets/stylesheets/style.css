@@ -35,9 +35,9 @@
 1.0 - General Styles
 --------------------------------------------------------------*/
 
-body{font:12px normal Tahoma, Geneva, sans-serif; color:#564338; margin:0px; padding:0px; line-height:20px; background:url(images/body_bg.jpg) repeat;}
+body{font:12px normal Tahoma, Geneva, sans-serif; color:#564338; background-color: #3fff; margin:0px; padding:0px; line-height:20px; background:url(images/body_bg.jpg) repeat;}
 
-header, nav, section, article, aside, footer {display:block;}
+header, nav, section, article, aside, footer {display:block; background-color: }
 
 .wrapper{clear:both; width:100%; margin:0px; padding:0px; float:left;}
 
@@ -67,6 +67,9 @@ figure{margin:0px; padding:0px;}
 
 blockquote{margin:0px;}
 
+.cover { height:100%; width:100%; position: relative; overflow: hidden; }
+.banner { background-size: cover; background-color: #fee; }
+
 .dt-sc-clear{clear:both; float:none; margin:0px; padding:0px;}
 
 .dt-sc-hr{width:100%; float:left; margin:25px 0px; clear:both; display:block;}
@@ -79,7 +82,7 @@ blockquote{margin:0px;}
 
 .dt-sc-clear{float:none; clear:both; margin:0px; padding:0px;}
 
-.container{width:1000px; margin:0 auto;}
+.container{width:940px; margin:0 auto;}
 
 .column{float:left; margin:0px 0px 0px 2%;}
 
@@ -184,7 +187,7 @@ h1, .menu ul li a, .dt-sc-button, .main h1, .main h2, .main h3, .main h4, .main 
 
 .blog-entry h2 a:hover, .blog-entry .entry-metadata a:hover, .dt-sc-ico-content:hover h4 a, .widget_categories ul li a:hover, .about-author .author-description h5 a:hover, ul.commentlist li .author-name a:hover, ul.commentlist li .reply a:hover, .project-details p a:hover, .dt-sc-contact-info p a:hover, .gallery:hover h5 a{color:#96836a;}
 
-.menu ul li ul li a, .widget_categories ul li a, .tagcloud a, .pagination-wrapper .pagination ul li a, .pagination-wrapper .pagination .next-post a, .about-author .author-description h5 a, ul.commentlist li .author-name a, ul.commentlist li .reply a, .sorting-container a.active-sort, .sorting-container a:hover, .project-details p a, .gallery-slider-container .bx-prev, .gallery-slider-container .bx-next, .dt-sc-contact-info p a{color:#564338;}
+.menu ul li ul li a, .widget_categories ul li a, .tagcloud a, .pagination-wrapper .pagination ul li a, .pagination-wrapper .pagination .next-post a, .about-author .author-description h5 a, ul.commentlist li .author-name a, ul.commentlist li .reply a, .sorting-container a.active-sort, .sorting-container a:hover, .project-details p a, .gallery-slider-container .bx-prev, .gallery-slider-container .bx-next, .dt-sc-contact-info p a{color:#564338; background-color: #ba742f;}
 
 .gallery-single h4, .project-details p span, .dt-sc-contact-info h2, .dt-sc-contact-info span{text-shadow:none;}
 
@@ -196,15 +199,6 @@ h1, .menu ul li a, .dt-sc-button, .main h1, .main h2, .main h3, .main h4, .main 
 
 .dt-sc-button{background:url(images/button_bg_pattern.png) repeat; cursor:pointer; font-weight:bold; color:#FFFFFF; text-transform:uppercase; transition:all 0.3s ease 0s;  -webkit-transition:all 0.3s ease 0s; -moz-transition:all 0.3s ease 0s; overflow:hidden; margin:10px 0px 0px 0px;}
 
-.btn:before, .icon-heart:after, .icon-star:after, .icon-plus:after, .icon-file:before{font-family:"FontAwesome"; speak:none; font-style:normal; font-weight:normal; font-variant:normal; text-transform:none;
-line-height:1; position:relative; -webkit-font-smoothing:antialiased;}
-
-.btn:after{content:''; position:absolute; z-index:-1; -webkit-transition:all 0.3s; -moz-transition:all 0.3s; transition:all 0.3s;}
-
-.btn{border:none; font-size:inherit; color:inherit; cursor:pointer; padding:25px 80px; display:inline-block; text-transform:uppercase; letter-spacing:1px; font-weight:700;
-outline:none; position:relative; -webkit-transition:all 0.3s; -moz-transition:all 0.3s; transition:all 0.3s;}
-
-.btn:after{content:''; position:absolute; z-index:-1; -webkit-transition:all 0.3s; -moz-transition:all 0.3s; transition:all 0.3s;}
 
 .widget.mailchimp .dt-sc-button.small.palebrown{cursor:pointer; margin-bottom:0px; line-height:inherit;}
 
@@ -212,7 +206,7 @@ outline:none; position:relative; -webkit-transition:all 0.3s; -moz-transition:al
 5.0 - Header Styles
 --------------------------------------------------------------*/
 
-header{width:100%; float:left; margin:0px; padding:0px; position:relative; z-index:9999; background:url(images/header_bg.jpg) repeat;}
+header{width:100%; float:left; margin:0px; padding:0px; position:relative; z-index:9999; background:url('assets/jam.png') repeat;}
 
 /*--------------------------------------------------------------
 5.1 - Header Top Styles
@@ -254,27 +248,27 @@ header .header_top .alignright{margin-bottom:0px;}
 5.3 - Menu Styles
 --------------------------------------------------------------*/
 
-#menu-container{background:url(images/menu_bg.jpg) repeat-x; float:left; width:100%; margin:0px 0px -6px; padding:0px;}
+#menu-container{background:url(assets/jam.png) repeat-x; float:left; width:100%; margin:0px 0px -6px; padding:0px;}
 
-.menu{position:relative;}
+.menu{position:relative; color: #5F2402;}
 
 #menu-container:after{background:url(images/menu_strip.png) no-repeat; background-size:cover; content:""; height:10px; width:100%; z-index:999; float:left; margin:-10px 0px 0px;}
 
 .menu ul{margin:0px auto; padding:0px;}
 
-.menu ul li{display:inline-block; position:relative;}
+.menu ul li{}
 
 .menu ul li:after{border-right:1px solid #644b3d; background:#321f15; float:left; display:inline; width:1px; height:100%; position:absolute; top:0px; right:0px; content:"";}
 
-.menu ul li a{color:#f2eac0; display:block; font-size:18px; text-transform:uppercase; padding:15px 14px 13px; float:left; text-shadow:1px 1px 1px #000000;}
+.menu ul li a{color:#ffffff; background-color: none; display:block; font-size:15px; text-transform:uppercase;}
 
-.menu ul li a:hover, .menu ul li ul li a:hover{color:#FFFFFF; text-decoration:none;}
+.menu ul li a:hover, .menu ul li ul li a:hover{color:#ba742f;; text-decoration:none;}
 
 .menu ul li:last-child:after{border:none; background:none;}
 
-.menu li ul{background:#e3c296; border-style:solid; border-width:0px 1px 3px; border-color:#b49770; width:210px; float:left; left:-4px; display:none; position: absolute; top:100%; z-index:999999;}
+.menu li ul{background:#e3c296; border-style:solid; border-width:0px 1px 3px; border-color:#fff; width:210px; float:left; left:-4px; display:none; position: absolute; top:100%; z-index:999999;}
 
-.menu ul li ul li{width:100%; float:left; border-width:0px 0px 1px; border-color:transparent transparent #b49770; border-style:solid;}
+.menu ul li ul li{width:100%; float:left; border-width:0px 0px 1px; border-color:transparent transparent #564338; border-style:solid; color: #564338;}
 
 .menu > ul > li > ul > li:hover > a, .menu ul li ul li ul li:hover a{background:#f8e3c6; color:inherit;}
 
@@ -282,11 +276,11 @@ header .header_top .alignright{margin-bottom:0px;}
 
 .menu ul li ul li:after{content:""; background:none; border-right:0px;}
 
-.menu ul li ul li a{font-size:15px; padding:12px 16px 10px 16px; float:left; display:block; width:100%; color:#564338; text-shadow:none; text-transform:capitalize;}
+.menu ul li ul li a{font-size:14px; padding:12px 16px 10px 16px; width:100%; color:#efefef;   text-shadow:none; text-transform:capitalize;}
 
 .menu > ul > li:hover > ul{display:block;}
 
-.menu > ul > li.current_page_item > a{color:#FFFFFF;}
+.menu > ul > li.current_page_item > a{color: #FFF; background-color: #884500;}
 
 .menu ul li ul li.current_page_item > a{background:#f8e3c6;}
 
@@ -294,9 +288,9 @@ header .header_top .alignright{margin-bottom:0px;}
 
 .menu ul li ul li ul{position:absolute; left:209px; top:0px; z-index:99999;}
 
-.menu ul li ul li ul{border-style:solid; border-width:0px 1px 3px 0px; border-color:#b49770;}
+.menu ul li ul li ul{border-style:solid; border-width:0px 1px 3px 0px; border-color:#f8e3c6;}
 
-.menu ul > li > ul li.hasSubmenu > a:after{content:"\f101"; font-family:FontAwesome; font-style:normal; font-weight:normal; color:#564338; text-decoration:inherit; position:absolute; top:12px; right:10px;}
+.menu ul > li > ul li.hasSubmenu > a:after{content:"\f101"; font-family:FontAwesome; font-style:normal; font-weight:normal; color:#efefef; text-decoration:inherit; position:absolute; top:12px; right:10px;}
 
 /*--------------------------------------------------------------
 6.0 - Main Styles

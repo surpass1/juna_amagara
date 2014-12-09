@@ -1,0 +1,6 @@
+<% @sponsor.each do|s|%>
+<%= s.title %>
+<%= s.description %>
+<%= image_tag s.image.url(:large	) %>
+
+<% end %>
