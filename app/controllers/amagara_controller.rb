@@ -1,6 +1,7 @@
 class AmagaraController < ApplicationController
   def index
-  	@homes = Home.all
+  	@home = Home.all
+    @homes = Home.where(:title => 'Housing a christian Family')
   end
 
   def about 
