@@ -1,0 +1,7 @@
+<% @ministry.each do|m|%>
+<%= m.title %>
+<%= m.description %>
+<%= m.category %>
+<%= image_tag m.photo.url(:large	) %>
+
+<% end %>

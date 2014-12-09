@@ -1,0 +1,181 @@
+/* CSS Document */
+  			.slogan {
+				  position:relative;
+				  width:1000px;
+				  padding:1em 1.5em;
+				  margin:2em auto;
+				  color:#fff;
+				  background:#884500;
+				  overflow:hidden;
+			  }
+			.card {
+				  position:relative;
+				  width:480px;
+				  padding:1em 1.5em;
+				  margin:2em auto;
+				  color:#fff;
+				  background:#efefef;
+				  overflow:hidden;
+			  }
+					   
+			  .note {
+				  position:relative;
+				  width:280px;
+				  padding:1em 1.5em;
+				  margin:2em auto;
+				  color:#fff;
+				  background:#999868;
+				  overflow:hidden;
+			  }
+			  .card:before {
+				  content:"";
+				  position:absolute;
+				  top:0;
+				  right:0;
+				  border-width:0 16px 16px 0; /* This trick side-steps a webkit bug */
+				  border-style:solid;
+				  border-color:#fff #fff #658E15 #658E15; /* A bit more verbose to work with .rounded too */
+				  background:#658E15; /* For when also applying a border-radius */
+				  display:block; width:0; /* Only for Firefox 3.0 damage limitation */
+				  /* Optional: shadow */
+				  -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+				  -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+				  box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+			  }
+			  
+			 .slogan:before {
+				  content:"";
+				  position:absolute;
+				  top:0;
+				  right:0;
+				  border-width:0 16px 16px 0; /* This trick side-steps a webkit bug */
+				  border-style:solid;
+				  border-color:#fff #fff #658E15 #658E15; /* A bit more verbose to work with .rounded too */
+				  background:#658E15; /* For when also applying a border-radius */
+				  display:block; width:0; /* Only for Firefox 3.0 damage limitation */
+				  /* Optional: shadow */
+				  -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+				  -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+				  box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+			  }
+		
+			  
+			  .note:before {
+				  content:"";
+				  position:absolute;
+				  top:0;
+				  right:0;
+				  border-width:0 16px 16px 0; /* This trick side-steps a webkit bug */
+				  border-style:solid;
+				  border-color:#fff #fff #658E15 #658E15; /* A bit more verbose to work with .rounded too */
+				  background:#658E15; /* For when also applying a border-radius */
+				  display:block; width:0; /* Only for Firefox 3.0 damage limitation */
+				  /* Optional: shadow */
+				  -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+				  -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+				  box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+			  }
+				
+			  .note.taupe {background:#999868;}
+			  .card.taupe {background:#999868;}
+      		  .note.taupe:before {border-color:#fff #fff #BDBB8B #BDBB8B; background:#BDBB8B;}
+			  	  
+              .navbar-inverse .navbar-inner{
+                -webkit-border-radius: 0px;
+                    -moz-border-radius: 0px;
+                        border-radius: 0px;
+                        background:#efefef;
+                        border:none;
+                }
+                
+                .page-header{
+                    border:none;
+                    padding: 10px 0px 0px;
+                    margin: 0px 0 0px;
+                }
+                .brand{
+        
+                    margin-left:20px;
+                    font-weight:700;
+                }
+                
+                .thumbnail{
+                    border:none;
+                    padding:0px;
+                    -webkit-border-radius: 0px;
+                    -moz-border-radius: 0px;
+                    border-radius: 0px;
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                    margin-bottom:20px;
+                }
+            .thumbnail img{
+                min-width:100%;
+                height:auto;
+            }
+			.done{
+				background-color:#FFF;
+			
+			}
+                
+               
+            .tab-content .tab-pane{
+                max-height:600px;
+                position:relative;
+                overflow:auto;
+            }
+            
+            .nav-tabs{
+                margin-bottom:15px;
+            }
+            
+            .fixed-top{
+                position:fixed;
+                top:0px;
+                bottom:0px;
+                display:inline-block;
+                max-width:360px;
+                z-index:1030;
+            }
+        
+        
+            footer{
+                padding-top:40px;
+                margin-top:40px;
+                border-top:1px solid #dedede;
+            }
+            .related-projects{
+                padding-top:40px;
+                margin-top:40px;
+                
+            }
+            
+                /*************** @media ******************/
+            @media (max-width: 940px){
+            .brand {
+                display:block;
+                text-align:center;
+                font-size:26px;
+                }
+        }
+        
+        @media (max-width: 1200px) and (min-width: 940px){
+                .fixed-top{
+                max-width:300px;
+            }
+            
+            
+        }
+        
+        @media (max-width: 940px) and (min-width: 768px){
+                .fixed-top{
+                max-width:225px;
+        
+            }
+            
+        
+        
+        }
+        
+            
