@@ -1,0 +1,7 @@
+<% @about.each do|a|%>
+<%= a.title %>
+<%= a.name %>
+<%= a.description %>
+<%= image_tag a.image.url(:large	) %>
+
+<% end %>

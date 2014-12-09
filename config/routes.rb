@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/junaamagara', as: 'rails_admin'
+  devise_for :users
   root :to=> 'amagara#index'
 
   get 'amagara/about'
@@ -11,5 +13,7 @@ Rails.application.routes.draw do
   get 'amagara/news'
   get 'amagara/sponsorship'
   get 'amagara/uganda'
-
+  get 'amagara/education'
+  get 'amagara/discipleship'
+  get 'amagara/outreach'
 end

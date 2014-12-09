@@ -1,65 +1,69 @@
-<header>
-        	<!--header_top starts-->
-            <div class="header_top">
-            	<!--container starts-->
-                <div class="container">
-                    <div class="logo">
-                        <a href=""><h1>Juna amagara Ministries</h1></a>
-                    </div> 
-                    <div class="alignright">
-                    	<%= link_to "Donate Now", amagara_donation_path%>
-                    </div>
-                </div>
-                <!--container ends-->     
-            </div>
-            <!--header_top ends-->
-            <!--menu-container starts-->
-            <div class="container">
-                <!--menu starts-->
-                <nav class="menu container" id="main-menu" style="background-color:#884500;">
-                    <ul>
-                        <li class="current_page_item">
-                            <%= link_to "Home", root_path %>
-                        </li>
-                        <li class="hasSubmenu">
-                            <a href="">About</a>
-                            <ul>
-                                <li><%= link_to "Who we are", amagara_about_path %></li>
-                                <li><%= link_to "About Uganda", amagara_uganda_path %></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <%= link_to "Ministries", amagara_ministry_path %>
-                        </li>
-                        <li>
-                           <%= link_to "Sponsorship", amagara_sponsorship_path %>
-                        </li>
-                        
-                        </li>
-                        <li class="hasSubmenu">
-                            <a href="">News/Faqs</a>
-                            <ul>
-                                <li><%= link_to "Faqs", amagara_faqs_path %></li>
-                                <li><%= link_to "News", amagara_news_path %></li>
-                            
-                            </ul>
-                        </li>
-                        <li class="hasSubmenu">
-                            <a href="">Activities</a>
-                            <ul>
-                                 <li>
-                                   <%= link_to "Construction", amagara_construction_path %>
-                                </li>    
-                                <li>
-                                   <%= link_to "Mission Trips", amagara_missions_path %>
-                                </li>
-                            
-                            </ul>
-                        </li>
-                       
-                    </ul>
-                </nav>
-                <!--menu ends-->
-            </div>
-            <!--menu-container ends-->
-        </header>
+  <nav class="navbar navbar-default navbar-inverse navbar-static-top menu" role="navigation" style="margin-bottom:0px;">
+    <div class="" style="">
+      <%= image_tag("header image.PNG", :size=> "1350x150")%>
+    </div>
+    <div class="container">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">
+          Toggle navigation
+        </span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li class="active"><%= link_to "Home", root_path %></li>
+              <li><%= link_to "Sponsorship", amagara_sponsorship_path %></li>
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Contruction<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                     <li><%= link_to "kishanye Mbarara", amagara_construction_path %></li>
+                     <li><%= link_to "Rubanda Kabale", amagara_construction_path %></li>
+                     <li><%= link_to "kayanja Hoima", amagara_construction_path %></li>
+                  </ul>
+              </li>
+
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">
+                      About <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><%= link_to "Who we are", amagara_about_path %></li>
+                      <li><%= link_to "About Uganda", amagara_uganda_path %></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Faqs/News <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Faqs", amagara_faqs_path %></li>
+                    <li><%= link_to "News", amagara_news_path %></li>
+                  </ul>
+              </li>
+              
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Ministries
+                  <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Education", amagara_education_path %></li>
+                    <li><%= link_to "Discipleship", amagara_discipleship_path %></li>
+                    <li><%= link_to "Out Reach", amagara_outreach_path %></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+    </div>
+</nav>
+
+
+
+    

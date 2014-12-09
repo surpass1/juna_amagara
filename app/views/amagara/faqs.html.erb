@@ -1,0 +1,6 @@
+<% @faqs.each do|f|%>
+<%= f.title %>
+<%= f.description %>
+<%= image_tag f.image.url(:large	) %>
+
+<% end %>
